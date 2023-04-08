@@ -1,0 +1,36 @@
+.container-favorite-cities {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  
+  .test-app {
+    display: flex;
+    background-color: #0b131e;
+    color: aliceblue !important;
+    border:2px solid orange;
+  }
+  
+  .favorities-cities-child1 {
+    background-color: #202c3c;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    border:1px solid blue;
+  }
+  
+  
+  .search-full-width{
+      width:100%;
+      border:1px solid green;
+  }
+  
+  .container-daily-weather{
+      border:1px solid red;
+  }
+  
+  .card-favorities-cities{
+      display:flex;
+      flex-direction: column;
+      border:2px solid violet;
+  }

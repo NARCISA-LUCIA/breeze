@@ -1,0 +1,6 @@
+<form class="search-cities" [formGroup]="formControlGroup" (onSubmit)="search()">
+    <mat-form-field class="search-full-width">
+        <input matInput placeholder="Search a location" formControlName="location"
+            (keyup.enter)="search()">
+    </mat-form-field>
+</form>

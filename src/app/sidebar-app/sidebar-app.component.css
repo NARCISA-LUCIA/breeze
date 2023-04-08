@@ -1,0 +1,34 @@
+.container-sidebar {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 80px;
+  padding: 10px;
+  background-color: #0b131e;
+}
+
+.container-sidebar-child {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #202c3c;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.content-sidebar {
+  /* border: 1px solid blue; */
+  padding: 3px;
+  height: 50px;
+  margin-top:50px;
+}
+
+.menu-button {
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: x-small;
+  color: aliceblue !important;
+}
