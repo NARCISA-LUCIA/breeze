@@ -1,5 +1,10 @@
 <div class="container-sidebar">
-    <mat-sidenav-container class="container-sidebar-child">
+    <mat-sidenav-container [ngClass]="{'container-sidebar-child-light': isLight, 'container-sidebar-child-dark': !isLight}">
+   
+       <mat-sidenav-content class="content-sidebar">
+        Day/Night 
+        <mat-slide-toggle (change)="toggle($event)"></mat-slide-toggle>
+       </mat-sidenav-content>
         <mat-sidenav-content class="content-sidebar">
             <button mat-button class="menu-button">Weather
                 <mat-icon>home</mat-icon>

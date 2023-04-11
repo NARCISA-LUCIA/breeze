@@ -1,1 +1,65 @@
-<p>right-area works!</p>
+<div class="right-area-container">
+    <div class="right-area-container-top">
+        <div class="container-city-degrees">
+            <h3 class="current-city">{{currentLocationData.city}}</h3>
+            <p class="current-celsius-degrees">{{currentLocationData.temperature| number: '1.0-0'}}°</p>
+        </div>
+        <img src="../../assets/sun.JPG" class="image" alt="Photo temperature">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="right-area-container-center">
+        <h3 class="title-forecast">Today's Forecast</h3>
+        <div class="container-daily-forecast">
+            <div class="seven-days-forecast">
+                <form class="forecast-form">
+                    <label for="time">6:00 AM </label>
+                    <img src="../../assets/sun.JPG" alt="Photo temperature" />
+                    <p class="forecast-degrees">{{currentLocationData.hourly.temperature_2m[6]| number: '1.0-0'}}°</p>
+                </form>
+            </div>
+            <div class="seven-days-forecast">
+                <form class="forecast-form">
+                    <label for="time">9:00 AM </label>
+                    <img src="../../assets/sun.JPG" alt="Photo temperature" />
+                    <p class="forecast-degrees">{{currentLocationData.hourly.temperature_2m[9]}}°</p>
+                </form>
+            </div>
+            <div class="seven-days-forecast">
+                <form class="forecast-form">
+                    <label for="time">12:00 PM </label>
+                    <img src="../../assets/sun.JPG" alt="Photo temperature" />
+                    <p class="forecast-degrees">{{currentLocationData.hourly.temperature_2m[12]}}°</p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="right-area-container-bottom">
+        <h3 class="title-forecast">7 - Day Forecast</h3>
+        <div class="right-area-container-bottom-align">
+
+            <div *ngFor="let item of currentLocationData.daily.time; let i = index">
+                <div class="weekly-forecast">
+                    <div class="forecast-title">
+                        <p class="forecast-day">{{item}}</p>
+                    </div>
+                    <div class="weather-daily">
+                        <div class="image-weather">
+                            <img src="../../assets/sun.JPG" alt="Photo temperature" />
+                            <p class="weather-title">Sunny</p>
+                        </div>
+                        <p class="weather-degrees"><span
+                                class="day-degrees">{{currentLocationData.daily.temperature_2m_max[i]| number: '1.0-0'}}</span><span
+                                class="night-degrees">/{{currentLocationData.daily.temperature_2m_min[i]| number: '1.0-0'}}</span>
+                        </p>
+                    </div>
+                </div>
+                <mat-divider class="divider-bottom-line"></mat-divider>
+            </div>
+        </div>
+    </div>
+</div>

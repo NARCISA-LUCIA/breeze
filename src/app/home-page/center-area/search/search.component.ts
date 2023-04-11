@@ -19,6 +19,6 @@ export class SearchComponent {
     let location = this.formControlGroup.controls['location'].value;
     console.log("location " + location);
     
-    this.searchKeywordEvent.emit("eventemitter");
+    this.searchKeywordEvent.emit(location);
   }
 }

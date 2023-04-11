@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<div [ngClass]="{'main-box-light': isLight, 'main-box-dark': !isLight}">
+    <app-sidebar-app></app-sidebar-app>
+    <router-outlet></router-outlet>
+    
+</div>

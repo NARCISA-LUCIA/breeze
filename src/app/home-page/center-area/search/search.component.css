@@ -1,0 +1,28 @@
+.search-input{
+  /* border: 2px solid green; */
+  height:55px;
+  width:450px;
+}
+
+input.input-location {
+  color: aliceblue !important;
+}
+
+::placeholder {
+  color: #9aa3b2 !important;
+  font-size: 10px;
+  
+}
+
+.search-cities {
+  border-radius:10px;
+  background-color: #202C3C;
+height:50px;
+}
+
+::ng-deep .mat-form-field-border {
+    /*change color of underline*/
+ color:red !important;
+  
+}
+

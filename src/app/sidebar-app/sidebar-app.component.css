@@ -2,11 +2,25 @@
   /* border: 1px solid green; */
   height: 100%;
   width: 80px;
-  padding: 10px;
-  background-color: #0b131e;
+  /* padding: 10px; */
 }
 
-.container-sidebar-child {
+.container-sidebar-child-light {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(254, 216, 247),
+    rgb(196, 221, 254)
+  );
+
+  border-radius: 5px;
+  height: 100%;
+}
+
+.container-sidebar-child-dark {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
@@ -19,13 +33,14 @@
 .content-sidebar {
   /* border: 1px solid blue; */
   padding: 3px;
-  height: 50px;
-  margin-top:50px;
+  height: 80px;
+  margin-top: 50px;
+  color: aliceblue;
 }
 
 .menu-button {
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -1,0 +1,22 @@
+<div class="container-favorite-cities">
+
+    <mat-card-content [ngClass]="{'favorities-cities-child1-light': isLight, 'favorities-cities-child1-dark': !isLight}">
+        <div class="container-cities-local-time">
+            <div class="image">
+                <img mat-card-image src="../../assets/sun.JPG" alt="Photo temperature">
+            </div>
+            <div class="cities-local-time">
+                <mat-card-title class="cities">{{currentLocationData.city}}</mat-card-title>
+                <mat-card-title class="local-time">{{currentLocationData.time| date:'shortTime'}}</mat-card-title>
+            </div>
+        </div>
+        <div class="container-celsius-icon">
+            <mat-card-title class="celsius-degrees">{{currentLocationData.temperature| number:'1.0-0'}}
+                °</mat-card-title>
+            <mat-icon class="material-icons favorite" (click)="selectFavorite()">
+                {{isFavorite()}}
+            </mat-icon>
+        </div>
+    </mat-card-content>
+
+</div>

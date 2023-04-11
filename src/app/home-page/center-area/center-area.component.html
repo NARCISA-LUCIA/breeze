@@ -1,42 +1,10 @@
-<app-search>(searchKeywordEvent)="sendToApiLocation($event)"</app-search>
+<div class="main-area">
+    <div class="main-center-area">
+        <app-search (searchKeywordEvent)="sendToApiLocation($event)"></app-search>
 
-
-<!-- <div class="test-app"> -->
-    <!-- <app-sidebar-app></app-sidebar-app> -->
-
-    <!-- <div class="container-favorite-cities">
-       
-        <div class="card-favorities-cities">
-            <mat-card class="favorite-cities">
-                <mat-card-content class="favorities-cities-child1">
-                    <img mat-card-image src="../../assets/sun.JPG" alt="Photo temperature">
-                    <mat-card-title class="cities">Madrid</mat-card-title>
-                    <mat-card-subtitle class="local-time">11:00</mat-card-subtitle>
-                    <mat-card-title class="celsius-degrees">31 grade</mat-card-title>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card class="favorite-cities">
-                <mat-card-content class="favorities-cities-child1">
-                    <img mat-card-image src="../../assets/sun.JPG" alt="Photo temperature">
-                    <mat-card-title class="cities">Madrid</mat-card-title>
-                    <mat-card-subtitle class="local-time">11:00</mat-card-subtitle>
-                    <mat-card-title class="celsius-degrees">31 grade</mat-card-title>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card class="favorite-cities">
-                <mat-card-content class="favorities-cities-child1">
-                    <img mat-card-image src="../../assets/sun.JPG" alt="Photo temperature">
-                    <mat-card-title class="cities">Madrid</mat-card-title>
-                    <mat-card-subtitle class="local-time">11:00</mat-card-subtitle>
-                    <mat-card-title class="celsius-degrees">31 grade</mat-card-title>
-                </mat-card-content>
-            </mat-card>
+        <div *ngFor="let item of currentLocationDataArray">
+            <app-location [currentLocationData]="item"></app-location>
         </div>
     </div>
-
-    <div class="container-daily-weather">
-        <h3>Madrid</h3>
-    </div>
-</div> -->
+    <app-right-area *ngIf="isRightAreaVisible()" [currentLocationData]="currentLocationData"></app-right-area>
+</div>
