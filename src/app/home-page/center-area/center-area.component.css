@@ -1,11 +1,11 @@
-.main-center-area{
-    width:450px;
-    gap:15px;
-    display:flex;
-    flex-direction: column;
+.main-center-area {
+  width: 450px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-area{
-    display: flex;
-    gap:40px;
+.main-area {
+  display: flex;
+  gap: 40px;
 }

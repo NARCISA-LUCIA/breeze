@@ -1,27 +1,22 @@
 .container-sidebar {
-  /* border: 1px solid green; */
   height: 100%;
   width: 80px;
-  /* padding: 10px; */
 }
 
 .container-sidebar-child-light {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-image: linear-gradient(
     to right,
-    rgb(254, 216, 247),
-    rgb(196, 221, 254)
+    rgb(109, 161, 252),
+    rgb(76, 217, 254)
   );
-
   border-radius: 5px;
   height: 100%;
 }
 
 .container-sidebar-child-dark {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -31,7 +26,6 @@
 }
 
 .content-sidebar {
-  /* border: 1px solid blue; */
   padding: 3px;
   height: 80px;
   margin-top: 50px;

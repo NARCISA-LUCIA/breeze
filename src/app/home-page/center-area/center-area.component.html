@@ -1,7 +1,6 @@
 <div class="main-area">
     <div class="main-center-area">
         <app-search (searchKeywordEvent)="sendToApiLocation($event)"></app-search>
-
         <div *ngFor="let item of currentLocationDataArray">
             <app-location [currentLocationData]="item"></app-location>
         </div>

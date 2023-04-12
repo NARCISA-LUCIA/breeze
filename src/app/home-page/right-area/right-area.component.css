@@ -18,10 +18,9 @@
 }
 
 .text {
-  color: #9aa3b2;
+  color: aliceblue;
   margin-top: -10px;
   margin-bottom: 25px;
-  /* border:1px solid yellow; */
 }
 
 .right-area-container-top {
@@ -35,14 +34,12 @@
   display: flex;
   width: 60px;
   height: 70px;
-  border: 2px solid green;
   margin-right: 50px;
 }
 
 /* Center forecast */
 .right-area-container {
   color: aliceblue;
-  /* border: 1px solid red; */
   width: 380px;
 }
 
@@ -63,24 +60,23 @@ mat-divider {
   height: 110px;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid green; */
   flex-direction: column;
   gap: 10px;
   padding: 4px;
 }
 
 .seven-days-forecast {
-  border-right: 1px solid #9aa3b2;
+  border-right: 1px solid aliceblue;
   height: 100px;
 }
 
 label {
-  color: #9aa3b2;
+  color: aliceblue;
   font-size: 12px;
 }
 
 .title-forecast {
-  color: #9aa3b2;
+  color: aliceblue;
   text-transform: uppercase;
   font-size: 11px;
 }
@@ -89,7 +85,6 @@ label {
 
 .weekly-forecast {
   display: flex;
-  /* border: 1px solid rebeccapurple; */
   gap: 5px;
 }
 
@@ -98,33 +93,25 @@ label {
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  /* border: 1px solid green; */
 }
 
 .forecast-title {
   display: flex;
   align-items: center;
-  /* border: 1px solid orange; */
   width: 80px;
 }
 
 .forecast-day {
   margin-bottom: 0px;
   font-size: 12px;
-  color: #9aa3b2;
+  color: aliceblue;
 }
 .weather-title {
-  /* border: 1px solid red; */
   margin-bottom: 0px;
 }
 
 .weather-degrees {
   margin-bottom: 0px;
-  /* border: 1px solid yellow; */
-}
-
-.night-degrees {
-  color: #9aa3b2;
 }
 
 .image-weather {

@@ -11,13 +11,15 @@ import { ThemeService } from 'src/app/service/theme-service';
 export class LocationComponent implements OnInit, OnDestroy {
   @Input() currentLocationData: CurrentLocationData;
 
-  constructor(private localStorageService: LocalStorageService,
-    private themeService: ThemeService) { }
+  constructor(
+    private localStorageService: LocalStorageService,
+    private themeService: ThemeService
+  ) {}
 
   isLight: boolean = true;
 
   ngOnInit(): void {
-    this.themeService.themeSwitch.subscribe(event => this.isLight = event);
+    this.themeService.themeSwitch.subscribe((event) => (this.isLight = event));
   }
 
   ngOnDestroy(): void {
